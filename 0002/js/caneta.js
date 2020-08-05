@@ -4,7 +4,7 @@ let rabiscos = [];
 let pincelTamanho = 200;
 
 function preload() {
-  imagem = loadImage('/assets/gradiente.jpg');
+  imagem = loadImage('assets/gradiente.jpg');
 }
 
 function windowResized() {
@@ -45,7 +45,7 @@ function mouseDragged() {
 
 function mouseReleased() {
   let ultimoTraco = rabiscos[rabiscos.length - 1];
-  ultimoTraco.finalizar(imagem.get(mouseX, mouseY));
+  ultimoTraco.finalizar(imagemReferencia.get(mouseX, mouseY));
 }
 
 function mouseWheel(event) {
