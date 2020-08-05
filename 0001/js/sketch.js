@@ -99,5 +99,8 @@ function draw() {
 }
 
 function keyPressed() {
-  // save();
+  
+  if( keyCode == 83) {
+    save('daora.png');
+  }
 }
